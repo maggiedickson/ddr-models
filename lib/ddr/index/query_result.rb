@@ -95,7 +95,7 @@ module Ddr::Index
       page_params = params.dup
       page_size = page_params.delete(:rows) || PAGE_SIZE
       response = Connection.page(num, page_size, "select", params: page_params)
-      response.docs
+      QueryResultPage.new(response.docs)
     end
 
   end

@@ -15,6 +15,7 @@ module Ddr
     autoload :QueryClause
     autoload :QueryParams
     autoload :QueryResult
+    autoload :QueryResultPage
     autoload :Response
     autoload :SortOrder
     autoload :UniqueKeyField
